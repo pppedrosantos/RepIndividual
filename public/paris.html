@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4 dias em Paris</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/paris.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="icons/world.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="pesquisa-login">
 
@@ -23,7 +26,8 @@
         <div class="div_pesquisa">
             <img onclick="aparecer()" src="..//projetoIndividual/icons/lupa-de-pesquisa.png" class="aparecer" alt="">
             <input placeholder="pesquisar..." id="ipt_teste" style="display: none;" class="ipt_pesquisa" type="text">
-            <a href="login.html"><img id="logar" onclick="login()" class="aparecer" src="..//projetoIndividual/icons/user.png" alt=""></a>
+            <a href="login.html"><img id="logar" onclick="login()" class="aparecer"
+                    src="..//projetoIndividual/icons/user.png" alt=""></a>
             <img onclick="saida()" id="sair" style="display: none;" class="aparecer"
                 src="..//projetoIndividual/icons/login.png" alt="">
 
@@ -38,13 +42,23 @@
 
             <nav class="barra-navecao">
                 <ul class="lista-ul">
-                    <li>Home</li>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
                     <a href="sobre.html">
                         <li>Sobre</li>
                     </a>
-                    <li>Fórum</li>
+                    <a href="consultoria.html">
+                        <li>Consultoria</li>
+                    </a>
                     <a href="contato.html">
                         <li>Contato</li>
+                        <a href="destinos.html">
+                            <li>Destinos Procurados</li>
+                        </a>
+                        <a href="cadastro.html">
+                            <li>Cadastro</li>
+                        </a>
                     </a>
                     <a style="text-decoration: none;" href="login.html">
                         <li>Login</li>
@@ -56,5 +70,55 @@
         </div>
         <!--container-->
     </div>
+
+    <div class="central">
+        <div class="paris-center">
+            <div class="box-paris-center">
+                <div class="left-box-paris">
+                    <div class="img-box"></div>
+                </div>
+                <div class="right-box-paris">
+                    <h5 style="font-size: 25px;">Paris em 4 dias</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga aperiam iusto placeat
+                        repellendus deleniti nostrum sed nulla ullam laborum, tempora vel consequatur deserunt praesentium
+                        non. Sunt distinctio maiores hic!</p>
+                </div>
+                <div class="box-paris-center">
+                    <div class="left-box-paris2">
+                        <h5>1º Dia</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga aperiam iusto placeat
+                            repellendus deleniti nostrum sed nulla ullam laborum, tempora vel consequatur deserunt
+                            praesentium non. Sunt distinctio maiores hic!</p>
+                    </div>
+                    <div class="right-box-paris">
+                        <h5>2º Dia</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga aperiam iusto placeat
+                            repellendus deleniti nostrum sed nulla ullam laborum, tempora vel consequatur deserunt
+                            praesentium non. Sunt distinctio maiores hic!</p>
+                    </div>
+                </div>
+                <div class="box-mid">
+                    <div class="img-mid"></div>
+                </div>
+                <div class="left-box-paris2">
+                    <h5>3º Dia</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga aperiam iusto placeat
+                        repellendus deleniti nostrum sed nulla ullam laborum, tempora vel consequatur deserunt
+                        praesentium non. Sunt distinctio maiores hic!</p>
+                </div>
+                <div style="margin-top: 30px;" class="right-box-paris">
+                    <h5>4º Dia</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga aperiam iusto placeat
+                        repellendus deleniti nostrum sed nulla ullam laborum, tempora vel consequatur deserunt
+                        praesentium non. Sunt distinctio maiores hic!</p>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+    <div class="footer"> Desenvolvido por um aluno Bandtec</div>
+
 </body>
+
 </html>

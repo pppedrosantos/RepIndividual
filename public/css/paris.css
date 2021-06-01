@@ -1,0 +1,77 @@
+.central{
+    height: 1750px;
+}
+
+.paris-center{
+    height: 1700px;
+    background-color: rgb(228, 227, 227);
+    margin: 0 220px;
+}
+
+
+.left-box-paris{
+    float: left;
+    width: 50%;
+    height: 420px;
+    background-color: chartreuse;
+}
+
+.left-box-paris2{
+    float: left;
+    width: 50%;
+    height: 420px;
+}
+
+.left-box-paris2 h5{
+    margin-top: 60px;
+    margin-left: 20px;
+    color: rgb(208, 99, 60);
+}
+
+.left-box-paris2 p{
+    font-size: 17px;
+    max-width: 85%;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.img-box{
+    width: 100%;
+    height: 420px;
+    background-image: url('..//image/paris-page.jpg');
+    background-size: cover;    
+}
+
+.right-box-paris{
+    float: right;
+    height: 450px;
+    width: 50%;
+    
+}
+
+.right-box-paris h5{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(208, 99, 60);
+}
+
+.right-box-paris p{
+    font-size: 17px;
+    max-width: 85%;
+    text-align: justify;
+    margin-left: 20px;
+} 
+
+.box-mid{
+    height: 300px;
+    width: 100%;
+    /* background-color: darkgreen; */
+    overflow: hidden;
+}
+
+.box-mid .img-mid{
+    background-image: url(..//image/paris-page2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
