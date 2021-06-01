@@ -1,0 +1,372 @@
+body, h5, h2{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    width: 130px;
+    height: 150px;
+    background-size: cover;
+    margin-left: 40%;
+}
+
+
+.pesquisa-login{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.pesquisa-login .midia {
+    margin-left: 80px;
+}
+
+.pesquisa-login .midia img{
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.div_pesquisa{
+    float: right;
+    margin-right: 80px;
+   
+}
+
+.ipt_pesquisa{
+    width: 200px;
+    height: 18px;
+    float: left;
+    outline: 0;
+}
+
+
+.aparecer{
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.header{
+    height: 300px;
+}
+
+ h2{
+    text-align: center;
+    
+}
+
+
+.container{
+    margin-right: 120px;
+    margin-left: 120px;
+}
+
+.banner{
+    width: 100%;
+    height: 820px;
+}
+
+.right-section{
+    float: left;
+    width: 730px;
+    
+}
+
+.box-right-section{
+    overflow: hidden;
+    width: 730px;
+}
+
+
+.center1{
+    width: 730px;
+    height: 430px;
+    float: left; 
+    box-shadow: 2px 2px 2px 2px #ccc;
+    cursor: pointer;
+
+}
+
+.center1:hover{
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+.left-section{
+    float: right;
+}
+
+.box-left-section{
+    overflow: hidden;
+}
+
+
+.center2{
+    width: 355px;
+    height: 430px;
+    float: right; 
+    box-shadow: 2px 2px 2px 2px #ccc;
+    cursor: pointer;
+}
+
+.center2:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.center3{
+    width: 355px;
+    height: 230px;
+    float: right; 
+    box-shadow: 2px 2px 2px 2px #ccc;
+    cursor: pointer;
+}
+
+.center3:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.box-right-section-center4{
+    width: 350px;
+    height: 230px;
+    overflow: hidden;
+    float: left; 
+}
+
+.center4{
+    width: 350px;
+    height: 230px;
+    box-shadow: 2px 2px 2px 2px #ccc;
+    cursor: pointer;
+    margin-right: 27px;
+}
+
+.center4:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.box-right-section-center5{
+    width: 350px;
+    height: 230px;
+    overflow: hidden;
+    float: right;
+}
+
+.center5{
+    width: 350px;
+    height: 230px; 
+    box-shadow: 2px 2px 2px 2px #ccc;
+    cursor: pointer;
+    margin-right: 27px;
+}
+
+.center5:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+
+.barra-navecao{
+    padding-left: 7%;
+    overflow: hidden;
+    
+}
+
+ul li{
+    display: inline;
+    border: 1px solid rgb(233, 232, 232);
+    cursor: pointer;
+    float: left;
+    padding: 5px 14px;
+    
+
+}
+
+ul li:hover{
+    background-color: rgb(100, 100, 100);
+    color: white;
+    transition: all 0.4s;
+}
+
+
+.left-post{
+    width: 750px;
+    float: left;
+}
+
+
+.mid-section{
+    width: 100%;
+    height: 260px;
+    background-color: #ccc;
+}
+
+.mid-section .box-img{
+    width: 120px;
+    height: 180px;
+    float: left;
+    margin: 30px 10px 0 120px;
+    /* background-color: black; */
+    
+}
+
+.mid-section .box-img .img1{
+    background-image: url(../image/family.png);
+    height: 140px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.mid-section .box-img h5{
+    /* color: white; */
+    text-align: center;
+}
+
+.mid-section .box-img .img2{
+    background-image: url(../image/jacket.png);
+    height: 140px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.mid-section .box-img .img3{
+    background-image: url(../image/robot-suitcase.png);
+    height: 140px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.mid-section .box-img .img4{
+    background-image: url(../image/passport.png);
+    height: 140px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.final-post{
+    margin-top: 30px;
+    width: 100%;
+    height: 930px;
+}
+
+.teste1{
+    width: 360px;
+    height: 250px;
+    background-color: gray;
+    float: left;
+    margin-top: 15px;
+}
+
+.teste2{
+    margin-top: 15px;
+    width: 360px;
+    height: 250px;
+    background-color: gray;
+    float: right;
+}
+
+.teste1 .img-austria{
+    background-image: url(../image/hallstatt.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.teste2 .img-lisboa{
+    background-image: url(../image/lisboa.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.teste1 .img-atacama{
+    background-image: url(../image/atacama.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.teste2 .img-berlim{
+    background-image: url(../image/berlim.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.teste1 .img-gramado{
+    background-image: url(../image/gramado.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.teste2 .img-foz{
+    background-image: url(../image/foz.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+.right-post{
+   width: 350px;
+
+    float: right;
+}
+
+.right-post > h5{
+    text-align: right;
+    
+}
+
+.hospedagem-box{
+    margin-top: 15px;
+    float: right;
+    width: 300px;
+    height: 250px;
+    cursor: pointer;
+}
+
+.hospedagem1{
+    background-image: url(../image/booking.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.hospedagem2{
+    background-image: url(../image/hw.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.hospedagem3{
+    background-image: url(../image/airbnb1.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+.footer{
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ccc;
+}
