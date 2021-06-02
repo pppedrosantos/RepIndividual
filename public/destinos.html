@@ -51,6 +51,9 @@
                         <li>Contato</li>
                     </a>
                     <li>Destinos Procurados</li>
+                    <a href="game.html">
+                        <li>Game</li>
+                    </a>
                     <a href="cadastro.html">
                         <li>Cadastrar</li>
                     </a>
@@ -95,12 +98,10 @@ var outros = parseInt(Math.random() * 100) + 1;
 var somatorio = Number(eua) + Number(argentina) + Number(portugal) + Number(chile) + Number(outros);
 
 eua = somatorio / eua;
-alert(`${eua}`)
-alert(`${somatorio}`)
 eua = 100 / eua;
 
 argentina = somatorio / argentina;
-eargentina = 100 / argentina;
+argentina = 100 / argentina;
 
 portugal = somatorio / portugal;
 portugal = 100 / portugal;
@@ -120,7 +121,7 @@ var myChart = new Chart(ctx, {
         datasets: [{
             label: 'Destinos mais procurados',
             
-            data: [eua.toFixed(2), argentina.toFixed(2), portugal.toFixed(2), chile.toFixed(2), outros.toFixed(2)],
+            data: [eua.toFixed(3), argentina.toFixed(3), portugal.toFixed(3), chile.toFixed(3), outros.toFixed(3)],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
