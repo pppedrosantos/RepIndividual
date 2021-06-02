@@ -74,7 +74,7 @@
                 </div>
           </div>
           <div class="box-central-direita"> <h5>Destinos mais procurados</h5>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio aut laboriosam molestias, nesciunt veniam voluptatibus fugit magnam quos distinctio? Est praesentium tempore similique delectus ut temporibus quidem eaque neque illum!</p> </div>
+        <p>Através do gráfico de pizza ao lado, você, que está querendo fazer sua próxima viagem, pode saber quais são os destinos mais buscados do momento.</p> </div>
         </div>
     </div>
 
@@ -90,11 +90,13 @@ var eua = parseInt(Math.random() * 100) + 1;
 var argentina = parseInt(Math.random() * 100) + 1;
 var portugal = parseInt(Math.random() * 100) + 1;
 var chile = parseInt(Math.random() * 100) + 1;
-var espanha = parseInt(Math.random() * 100) + 1;
+var outros = parseInt(Math.random() * 100) + 1;
 
-var somatorio = Number(eua) + Number(argentina) + Number(portugal) + Number(chile) + Number(espanha);
+var somatorio = Number(eua) + Number(argentina) + Number(portugal) + Number(chile) + Number(outros);
 
 eua = somatorio / eua;
+alert(`${eua}`)
+alert(`${somatorio}`)
 eua = 100 / eua;
 
 argentina = somatorio / argentina;
@@ -106,19 +108,19 @@ portugal = 100 / portugal;
 chile = somatorio / chile;
 chile = 100 / chile;
 
-espanha = somatorio /espanha;
-espanha = 100 / espanha;
+outros = somatorio /outros;
+outros = 100 / outros;
 
 
 var ctx = chart.getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'pie',
     data: {
-        labels: ['EUA', 'Lisboa', 'Noronha', 'Chile', 'Espanha'],
+        labels: ['EUA', 'Lisboa', 'Noronha', 'Chile', 'Outros'],
         datasets: [{
             label: 'Destinos mais procurados',
             
-            data: [eua.toFixed(2), argentina.toFixed(2), portugal.toFixed(2), chile.toFixed(2), espanha.toFixed(2)],
+            data: [eua.toFixed(2), argentina.toFixed(2), portugal.toFixed(2), chile.toFixed(2), outros.toFixed(2)],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.5)',
                 'rgba(54, 162, 235, 0.5)',
