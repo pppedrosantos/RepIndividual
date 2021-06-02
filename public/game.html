@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="shortcut icon" href="icons/world.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="pesquisa-login">
+
+
+        <div class="midia">
+            <div> <img src="..//projetoIndividual/icons/facebook.png" alt=""></div>
+            <div> <img src="icons/youtube-logotype.png" alt=""></div>
+            <div> <img src="icons/instagram.png" alt=""></div>
+        </div>
+
+        <div class="div_pesquisa">
+            <img onclick="aparecer()" src="icons/lupa-de-pesquisa.png" class="aparecer" alt="">
+            <input placeholder="pesquisar..." id="ipt_teste" style="display: none;" class="ipt_pesquisa" type="text">
+            <img id="logar" onclick="login()" class="aparecer" src="icons/user.png" alt="">
+            <img onclick="saida()" id="sair" style="display: none;" class="aparecer"
+                src="icons/login.png" alt="">
+
+        </div>
+    </div>
+
+    <div class="header">
+
+        <div class="container">
+            <div><img class="logo" src="image/thinktrip .png" alt=""></div>
+            <hr>
+
+            <nav class="barra-navecao">
+                <ul class="lista-ul">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="sobre.html">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="consultoria.html">
+                        <li>Consultoria</li>
+                    </a>
+                    <a href="contato.html">
+                        <li>Contato</li>
+                    </a>
+                    <a href="destinos.html">
+                        <li>Destinos Procurados</li>
+                    </a>
+                    <a href="game.html">
+                        <li>Game</li>
+                    </a>
+                    <a href="cadastro.html">
+                        <li>Cadastrar</li>
+                    </a>
+                    <a href="login.html">
+                        <li>Login</li>
+                    </a>
+                </ul>
+                <!--lista-navegacao-->
+            </nav>
+            <!--barra-navecao-->
+        </div>
+        <!--container-->
+    </div>
+
+
+<div class="center">
+    <div class="box-game">
+        <div class="left-box-game">
+            <div>
+                <img style=" width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/255px-Flag_of_France.svg.png" alt="">
+                <select name="" id="combo_franca">
+                    <option value=""></option>
+                    <option value="1">França</option>
+                    <option value="2">Holanda</option>
+                    <option value="3">Croácia</option>
+                </select>
+                <img style=" width: 200px;" src="http://geo5.net/imagens/Bandeira-da-Africa-do-Sul.png" alt="">
+                <select name="" id="combo_africa">
+                    <option value=""></option>
+                    <option value="1">Nigéria</option>
+                    <option value="2">Angola</option>
+                    <option value="3">Africa do Sul</option>
+                </select>
+    
+            </div>
+            <div style="margin-top: 20px;">
+                <img  style=" width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_Austria.svg/255px-Flag_of_Austria.svg.png" alt="">
+                <select name="" id="combo_austria">
+                    <option value=""></option>
+                    <option value="1">Bélgica</option>
+                    <option value="2">Croácia</option>
+                    <option value="3">Austria</option>
+                </select>
+                <img style=" width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/1200px-Flag_of_Thailand.svg.png" alt="">
+                <select name="" id="combo_tailandia">
+                    <option value=""></option>
+                    <option value="1">Tailândia</option>
+                    <option value="2">Honduras</option>
+                    <option value="3">Costa Rica</option>
+                </select>
+            </div>
+        </div>
+    
+        <div class="right-box-game">
+    
+            <h5>Game das Bandeiras</h5>
+            <p>Vamos testar seu conhecimento</p>
+            <button onclick="conferir()">Conferir</button>
+            <p>Resultado na rodada:</p>
+            <input type="text" id="ipt_historico">
+            <br>
+            <button onclick="historico()">Historico</button>
+        </div>
+    
+        <div class="result-box-game">
+            <h4>Resultado</h5>
+                <div id="div_msg"></div>
+                <div id="div_msg2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="footer"> Desenvolvido por um aluno Bandtec</div>
+</body>
+</html>
+
+
+<script>
+    var resultados = [];
+    var contador = 0;
+    var contador2 = 0;
+    var rodada = 0;
+  
+   function conferir(){
+       div_msg.innerHTML = '';
+       div_msg2.innerHTML = '';
+       contador= '';
+       rodada++;
+
+
+    if(combo_franca.value == '1'){
+        contador++;
+        div_msg.innerHTML = `Você acertou: ${contador} de 4`;   
+    } 
+
+    if(combo_africa.value == '3'){
+        contador++;
+        div_msg.innerHTML = `Você acertou: ${contador} de 4`;
+        
+    }
+    
+    if(combo_austria.value == '3'){
+        contador++;
+        div_msg.innerHTML = `Você acertou: ${contador} de 4`;    
+    } 
+
+    if(combo_tailandia.value == '1'){
+        contador++;
+        div_msg.innerHTML = `Você acertou: ${contador} de 4`;
+    }
+
+     if(contador == 0){
+        div_msg.innerHTML = `Você não acertou nada!`;
+        resultados.push(`Na rodada: ${rodada} voce nao acertou nada!`)
+    } else{
+
+    resultados.push(`Na rodada ${rodada}: Você acertou ${contador} de 4`)
+    }
+    
+   }    
+
+   function historico(){
+       for (let index = 0; index < ipt_historico.value; index++) {
+           div_msg2.innerHTML = `${resultados[index]}`;
+       }
+   }
+
+
+</script>

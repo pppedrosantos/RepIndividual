@@ -1,0 +1,56 @@
+.center{
+    height: 600px;
+}
+
+.box-game{
+    margin: 0 100px;
+    background-color: #ccc;
+    height: 500px;
+}
+
+.left-box-game{
+    margin-top: 20px;
+    width: 55%;
+    height: 350px;
+    /* background-color: darkkhaki; */
+    float: left;
+}
+
+.right-box-game{
+    width: 45%;
+    height: 350px;
+    /* background-color: darkslategray; */
+    float: right;
+}
+
+.right-box-game h5{
+    color: rgb(208, 99, 60);
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.right-box-game button{
+    margin: 0 220px;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.right-box-game p{
+    text-align: center;
+}
+
+.right-box-game input{
+    margin: 0 180px;
+    padding: 0;
+}
+
+.result-box-game{
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    background-color: goldenrod;
+    overflow: hidden;
+}
