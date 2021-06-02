@@ -5,7 +5,7 @@ p{
 }
 
 .center-user{
-    height: 700px;
+    height: 800px;
     background-color: rgb(216, 215, 215);
 
 }
@@ -39,6 +39,7 @@ p{
 
 .container-viagens{
     margin: 0 200px;
+    height: 40px;
 }
 
 

@@ -81,8 +81,8 @@
 
                         <h3>Bem-vindo de volta!</h3>
 
-                        <input class="ipt_padrao" type="text" name="login" placeholder="login"><br>
-                        <input class="ipt_padrao" type="password" name="senha" placeholder="password"><br>
+                        <input class="ipt_padrao" id="ipt_login" type="text" name="login" placeholder="login"><br>
+                        <input class="ipt_padrao" id="ipt_password" type="password" name="senha" placeholder="password"><br>
 
                         <button  method="POST" onclick= "return entrar()" class="btn_entrar">Entrar</button>
 
@@ -104,7 +104,7 @@
 
 
 function entrar() {
-    alert('ola')
+    // alert('ola')
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -126,7 +126,8 @@ function entrar() {
             } else {
                 
                 alert('Erro de login!');
-
+                ipt_password.value = '';
+                ipt_login.value = '';
                 resposta.text().then(texto => {
                     console.error(texto);
                     finalizar_aguardar(texto);

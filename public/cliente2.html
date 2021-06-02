@@ -101,6 +101,7 @@
 
         </div>
     </div>
+    <div class="footer"> Desenvolvido por um aluno Bandtec</div>
 
    
 </body>
@@ -119,10 +120,9 @@
             body: formulario
 
         }).then(function (response) {
-            alert('ok')
-
+            
             if (response.ok) {
-                alert('foi')
+                
                 obterPublicacoes(idUsuario);
 
                 // window.location.href='cliente2.html';
@@ -148,8 +148,10 @@
                     resposta.json().then(function (resposta) {
                         atualizarFeed(resposta);
                         console.log(`Dados recebidos: ${JSON.stringify(resposta)}`);
+                        alert('Sua viagem foi cadastrada com sucesso!')
+                        ipt_destino.value = '';
                         
-                        alert('obterPublicacoes')
+                        // alert('obterPublicacoes')
                         // finalizarAguardar();
                     });
                 } else {
